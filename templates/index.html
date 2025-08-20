@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jiraya AI Full Voice Ultimate</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>Jiraya AI Full Voice Ultimate</h2>
+        <div id="chatbox"></div>
+        <input type="text" id="userInput" placeholder="Type your message here...">
+        <button onclick="sendMessage()">Send</button>
+        <button onclick="startVoice()">🎤 Voice</button>
+        <hr>
+        <h4>Upload Knowledge (PDF/TXT/MD)</h4>
+        <input type="file" id="knowledgeFile">
+        <button onclick="uploadKnowledge()">Upload</button>
+        <hr>
+        <label>Persona:</label>
+        <select id="personaSelect">
+            <option value="Friendly">Friendly</option>
+            <option value="Mentor">Mentor</option>
+            <option value="Strict">Strict</option>
+        </select>
+        <label>Language:</label>
+        <select id="languageSelect">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </div>
+    <script src="/static/script.js"></script>
+    <script src="/static/voice.js"></script>
+</body>
+</html>
